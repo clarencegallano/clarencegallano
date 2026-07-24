@@ -26,11 +26,11 @@
 ---
 
 ## LEADERSHIP EXPERIENCE
-**Hawai’i Student Entrepreneurs**, *Member* — Honolulu, HI — January 2026r–Present  
+**Hawai’i Student Entrepreneurs**, *Member* — Honolulu, HI — January 2026–Present  
 
 ---
 
 ## SKILLS AND INTERESTS
 **Language:** English, Tagalog, Ilocano 
 **Computer Skills:** Microsoft Word, Excel, and PowerPoint; Salesforce; Tableau
-**Interests:** Archiving | Reading| Horse Racing
+**Interests:** Archiving | Reading | Horse Racing
