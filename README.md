@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-I'm Clarence, a rising junior at the University of Hawai'i at Mānoa majoring in Finance — driven by a clear goal: landing a bank internship where I can put my knowledge to work, and eventually pursuing a post-graduate degree to sharpen my expertise and stand out in the industry.
+I'm Clarence Gallano, a rising junior at the University of Hawai'i at Mānoa majoring in Finance — driven by a clear goal: landing a bank internship where I can put my knowledge to work, and eventually pursuing a post-graduate degree to sharpen my expertise and stand out in the industry.
 
 What sets me apart is my love of context. I dive into the histories of businesses — their bold strategies, hard-won successes, and instructive failures — because I believe the best way to understand today's markets is to understand how we got here. That curiosity fuels a sharper, more grounded style of financial analysis. Anyone can read a balance sheet; I want to understand the story and the decisions behind it.
 
