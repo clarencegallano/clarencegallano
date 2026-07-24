@@ -18,4 +18,6 @@ I'm Clarence, a rising junior at the University of Hawai'i at Mānoa majoring in
 
 What sets me apart is my love of context. I dive into the histories of businesses — their bold strategies, hard-won successes, and instructive failures — because I believe the best way to understand today's markets is to understand how we got here. That curiosity fuels a sharper, more grounded style of financial analysis. Anyone can read a balance sheet; I want to understand the story and the decisions behind it.
 
-I've paired that mindset with real-world experience that I'm excited to build on. As an office assistant, I sharpened the precision, organization, and follow-through that detail-driven finance work demands. As an art gallery attendant, I discovered how much I enjoy breaking down complex ideas for people, reading a room, and building genuine rapport on the spot — skills I can't wait to bring into client-facing banking work, where trust and clear communication make all the difference.
+I've paired that mindset with real-world experience I'm excited to build on. As an office assistant, I sharpened the precision and follow-through that detail-driven finance work demands. As an art gallery attendant, I discovered how much I enjoy breaking down complex ideas for people and building genuine rapport on the spot.
+
+Now I'm ready to bring all of it together — the historical perspective, the discipline, and the people skills — into a banking career built on both sharp analysis and real trust.
