@@ -1,6 +1,8 @@
 # Clarence Gallano
 **Email:** gallanoc@hawaii.edu
+
 **School Address:** 2500 Campus Road, Honolulu, HI 96822
+
 **Permanent Address:** 2500 Campus Road, Honolulu, HI 96822
 
 ---
@@ -31,6 +33,8 @@
 ---
 
 ## SKILLS AND INTERESTS
-**Language:** English, Tagalog, Ilocano 
+**Language:** English, Tagalog, Ilocano
+
 **Computer Skills:** Microsoft Word, Excel, and PowerPoint; Salesforce; Tableau
+
 **Interests:** Archiving | Reading | Horse Racing
