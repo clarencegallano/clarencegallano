@@ -22,7 +22,7 @@
 
 **University of Hawai’i at Mānoa**, *Office Assistant* — Honolulu, HI — August 2025-January 2026  
 - Created another version of the Filipino Language & Culture Program's brochure
-- Designed posters for the SINAG Brown Bag Series that included graduate students and professionals from around the world.  
+- Designed posters for the SINAG Brown Bag Series that included graduate students and professionals from around the world
 - Built a mockup of the Council of Teachers of Southeast Asian Languages website 
 
 ---
