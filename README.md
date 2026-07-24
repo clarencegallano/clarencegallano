@@ -14,4 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-I am Clarence Gallano, a rising junior pursuing a major in Finance at UH Mānoa. I like doing research on historical businesses to understand the current state of the world. I am fluent in three languages with English as my primary language.
+I am Clarence Gallano, a rising junior pursuing a major in Finance at the University of Hawai'i at Mānoa. My academic path has given me a strong foundation in financial principles, but what truly drives my curiosity is understanding how the past shapes the present. I have a propensity towards researching the histories of businesses, tracing how their strategies, successes, and failures have contributed to the current state of the global economy. This perspective allows me to approach financial analysis with a deeper appreciation for context and long-term trends.
+
+Alongside my studies, I've gained valuable professional experience in two distinct roles: as an office assistant, where I developed organizational and administrative skills, and as an art gallery attendant, where I honed my ability to engage with the public and communicate effectively in a client-facing environment.
+
+Looking ahead, my short-term goal is to secure an internship at a bank, where I can apply my academic knowledge in a real-world financial setting. In the long term, I plan to pursue a post-graduate degree to strengthen my expertise and credibility within the finance industry.
