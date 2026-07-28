@@ -1,11 +1,11 @@
 # [Memo Title]
 
-**Created by:** [Clarence Gallano]  
-**Updated by:** [Clarence Gallano]  
-**Date Created:** [07/27/2026]  
-**Date Updated:** [07/27/2026]  
-**Version:** [0.0]
-**LLM Used:** [Claude Sonnet 5]
+**Created by:** Clarence Gallano  
+**Updated by:** Clarence Gallano  
+**Date Created:** 07/27/2026  
+**Date Updated:** 07/27/2026  
+**Version:** 0.0
+**LLM Used:** Claude Sonnet 5
 
 ---
 
