@@ -27,7 +27,7 @@ Three hedge families are under evaluation: (1) Forward/Futures — locks in 1.08
 ---
 
 ## Limitations & Next Steps
-Figures use indicative rates, not firm dealer quotes; the money-market hedge assumes achievable borrowing terms not yet confirmed. Finance will obtain firm quotes (Stage 2), model scenarios (Stage 3), recommend an instrument (Stage 4), and finalize execution (Stage 5) within one week, pending CFO risk-tolerance guidance.
+Figures use indicative rates, not firm dealer quotes; the money-market hedge assumes achievable borrowing terms not yet confirmed. Finance will obtain firm quotes (Stage 2), model scenarios (Stage 3), generate a working book from Stage 2 spec (Stage 4), and use live market data (Stage 5) verify the analysis, reconcile the differences, and create an executive recommendation.
 
 ---
 
