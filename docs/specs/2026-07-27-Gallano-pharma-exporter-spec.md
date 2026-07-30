@@ -34,18 +34,18 @@ BRAND FORMATTING — applied per docs/_branding/design.json (v1.0.0)
   Full brand standard: docs/_branding/design.json · Source: https://manoa.hawaii.edu/brand/
 -->
 
-# [COMPANY NAME] — FX Transaction Hedge Model · Technical Specification
+# U.S. Pharmaceutical Exporter — FX Transaction Hedge Model · Technical Specification
 
 > <span style="color:#024731; font-weight:700;">Technical specification</span> for the FX transaction hedge model — the named-range contract, calculation flow, and validation checks, precise enough that an AI or a colleague could build (or rebuild) the workbook from this document alone. This spec is the input the AI-assisted build works from.
 
 | Field | Value |
 |------|------|
-| **Created by** | [name] |
-| **Updated by** | [name] |
-| **Date Created** | [YYYY-MM-DD] |
-| **Date Updated** | [YYYY-MM-DD] |
+| **Created by** | Clarence Gallano |
+| **Updated by** | Clarence Gallano |
+| **Date Created** | [2026-07-30] |
+| **Date Updated** | [2026-07-30] |
 | **Version** | [0.0] |
-| **LLM Used** (optional) | [LLM name and how it was used] |
+| **LLM Used** (optional) | Claude Sonnet 5 |
 | **Role** | Treasury Analyst / FP&A Analyst |
 | **Audience** | CFO / Director of Treasury |
 | **Companion Workbook** | `docs/spreadsheets/International Finance Spreadsheets.xlsx` (Chapter 8 Transaction Hedging tabs — reference/worked example) or student build |
@@ -54,12 +54,12 @@ BRAND FORMATTING — applied per docs/_branding/design.json (v1.0.0)
 
 ## 1. Problem Statement
 
-Briefly restate the exposure, timing, and objective in professional terms (3–5 sentences).
+The U.S. Pharmaceutical Exporter holds EUR8,000,000 receivable due in 12 months, exposed to EUR/USD fluctuation between contract inception and settlement. Our primary objective is to hedge this exposure using a forward, money market hedge, or options. The secondary goals are to maximize shareholder wealth and add value to the firm.
 
 <details>
 <summary><span style="color:#024731; font-weight:600;">Example phrasing (Receivable)</span></summary>
 
-> [Company] expects a [FC amount] receivable denominated in [EUR/GBP/JPY] settling in [T] days. A [depreciation/appreciation] in [currency pair] over that horizon would reduce realized USD proceeds and compress [gross margin / earnings / cash-flow coverage]. This specification documents the analytical framework used to quantify and compare four strategies — **no hedge**, **forward hedge**, **money-market hedge**, and **option (put) hedge** — and to produce the sensitivity evidence that supports the Stage 4 hedging recommendation.
+> U.S. Pharmaceutical Exporter expects an 8,000,000 receivable denominated in EUR settling in 360 days. A depreciation in EURUSD over that horizon would reduce realized USD proceeds and compress cash-flow coverage. This specification documents the analytical framework used to quantify and compare four strategies — **no hedge**, **forward hedge**, **money-market hedge**, and **option (put) hedge** — and to produce the sensitivity evidence that supports the Stage 4 hedging recommendation.
 </details>
 
 **Include:**
@@ -78,21 +78,21 @@ All inputs should be exposed as workbook **named ranges** so Calculation Flow (�
 
 ### 2.1 Core Inputs
 
-| Standardized Name | Description | Unit | Legacy Name (template) | Example |
+| Standardized Name | Description | Unit | Legacy Name (template) | Stage-4 data source |
 |-------------------|-------------|------|------------------------|--------:|
-| `FC_AMT` | Foreign-currency notional (receivable or payable) | FC | `recievable` *(sic)* / `contract_notional_value_payable` | 10,000,000 GBP |
-| `S0_in` | Spot exchange rate at inception | USD per FC | `current_spot_price_payable` *(payable only)* | 1.4600 |
-| `F0_in` | Forward rate to settlement | USD per FC | `for_GBPUSD` / `forward_price_payable` | 1.4400 |
-| `R_USD` | USD interest rate to settlement | Annual % | `rate_us_1y_payable` | 6.00% |
-| `R_FC` | Foreign-currency interest rate to settlement | Annual % | `rate_uk_1y_payable` | 6.50% |
-| `T_DAYS` | Days to settlement | Days | *(implicit = 365)* | 365 |
-| `BASIS` | Day-count denominator (single-value simplification) | Days | *(implicit = 360)* | 360 (USD) / 365 (GBP, EUR) |
-| `BASIS_USD` *(optional, rigorous variant)* | USD-leg day-count denominator | Days | — | 360 |
-| `BASIS_FC` *(optional, rigorous variant)* | FC-leg day-count denominator | Days | — | 360 (EUR) / 365 (GBP) |
-| `K_PUT` | Put option strike (receivables) | USD per FC | `x_put` | 1.4600 |
-| `K_CALL` | Call option strike (payables) | USD per FC | `call_strike` | 1.8000 |
-| `PREM_PUT` | Put premium, USD per 1 FC | USD | `put_price` | 0.015 |
-| `PREM_CALL` | Call premium, USD per 1 FC | USD | `call_price` | 0.010 |
+| `FC_AMT` | Foreign-currency notional (receivable or payable) | 8,000,000 | `recievable` *(sic)* / `contract_notional_value_payable` | Scenarios |
+| `S0_in` | Spot exchange rate at inception | 1.1364 | `current_spot_price_payable` *(payable only)* | https://finance.yahoo.com/quote/EURUSD=X/ |
+| `F0_in` | Forward rate to settlement | 1.0890 indicative — replaced with live market data at Stage 4 | `for_EURUSD` / `forward_price_payable` | https://www.fxempire.com/currencies/eur-usd/forward-rates |
+| `R_USD` | USD interest rate to settlement | 4.14% | `rate_us_1y_payable` | https://www.federalreserve.gov/releases/h15/ |
+| `R_FC` | Foreign-currency interest rate to settlement | 2.727% | `rate_eur_1y_payable` | https://www.euribor-rates.eu/en/current-euribor-rates/4/euribor-rate-12-months/ |
+| `T_DAYS` | Days to settlement | 365 | *(implicit = 365)* |
+| `BASIS` | Day-count denominator (single-value simplification) | 360 | *(implicit = 360)* |
+| `BASIS_USD` *(optional, rigorous variant)* | USD-leg day-count denominator | Days | — |  |
+| `BASIS_FC` *(optional, rigorous variant)* | FC-leg day-count denominator | Days | — |  |
+| `K_PUT` | Put option strike (receivables) | USD per FC | `x_put` | https://www.investing.com/currencies/eur-usd-options |
+| `K_CALL` | Call option strike (payables) | USD per FC | `call_strike` | https://www.investing.com/currencies/eur-usd-options |
+| `PREM_PUT` | Put premium, USD per 1 FC | USD | `put_price` | https://www.investing.com/currencies/eur-usd-options |
+| `PREM_CALL` | Call premium, USD per 1 FC | USD | `call_price` | https://www.investing.com/currencies/eur-usd-options |
 
 ### 2.2 Derived / Intermediate Values
 
@@ -298,7 +298,7 @@ Record candidly what the model gets right and where it needs work. If you are wr
 
 | Version | Date | Author | Change |
 |---------|------|--------|--------|
-| 0.1 | [YYYY-MM-DD] | [name] | Initial draft |
+| 0.1 | 2026-07-30 | Clarence Gallano | Initial draft |
 |  |  |  |  |
 
 ---
