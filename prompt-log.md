@@ -26,6 +26,6 @@ Stage 2
 
     I have a receivable of EUR8,000,000 due in 1 year/12/months/365 days. Help me figure out the put/call option strikes and their respective premiums using Investing
     Isn't the 1yr rate from the Fed 4.14% while the ECB is 2.727%. For the forward rate use 1.0890 for now. Make the changes accordingly and help me recalculate the premiums.
-    (Provided Claude and ChatGPT with the template and the spec)
+    (Provided Claude and ChatGPT with the template and the spec. I completely missed the Tab Architecture then added it with the help of Chat GPT)
     Is there anything missing from the requirements? What could be improved on?
     Which did you meet? (Checklist)
