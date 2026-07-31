@@ -107,7 +107,20 @@ All inputs should be exposed as workbook **named ranges** so Calculation Flow (Â
 
 ---
 
-## 3. Assumptions & Constraints
+## 3. Tab Architecture 
+
+| Worksheet | Purpose |
+|-----------|---------|
+| Cover | Displays the workbook title, project information, author, version, and last updated date. |
+| Legend/Key | Explains workbook color conventions, input cells, formula cells, output cells, and named-range notation. |
+| Inputs | Contains all user-editable inputs, including the standardized named ranges (FC_AMT, S0_in, F0_in, R_USD, R_FC, K_PUT, K_CALL, PREM_PUT, PREM_CALL, and T_DAYS). |
+| Forward Hedge | Calculates the forward hedge proceeds using the forward exchange rate. |
+| Money Market Hedge | Shows the three-step borrow-convert-invest calculation used for the money-market hedge. |
+| Option Hedge | Calculates the put (and call, if applicable) hedge payoff, including option premiums. |
+| Sensitivity | Displays the Â±5% spot-rate sensitivity analysis in 1% increments along with a comparison chart of all hedging strategies. |
+| Notes & Assumptions | Documents assumptions, data sources, market conventions, version history, and implementation notes. |
+
+## 4. Assumptions & Constraints
 
 State every convention used. Clarity here is what makes the model reproducible.
 
@@ -123,7 +136,7 @@ State every convention used. Clarity here is what makes the model reproducible.
 
 ---
 
-## 4. Calculation Flow
+## 5. Calculation Flow
 
 Described in named-range pseudocode so the logic is portable across Excel, Python, and AI prompts. Formulas are written for a **receivable** exposure; Step 7 shows the sign flips required for a payable.
 
@@ -184,7 +197,7 @@ For a payable of `FC_AMT` to be settled in FC at maturity, the model mirrors Ste
 
 ---
 
-## 5. Outputs
+## 6. Outputs
 
 | Output | Description | Format | Purpose |
 |--------|-------------|--------|---------|
