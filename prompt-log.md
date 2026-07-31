@@ -21,3 +21,11 @@ Stage 1
     Improve the memo using what I already wrote (I wrote a memo using Google Docs, but Claude improved upon it)
     What is the word count?
     Make sure it's 300-400 words and include what I found: Current EURUSD spot: 1.1363 USD 1-year interest rate: 4.14 EUR 1-year interest rate: 2.727 Indicative FWD: 1.0890
+
+Stage 2
+
+    I have a receivable of EUR8,000,000 due in 1 year/12/months/365 days. Help me figure out the put/call option strikes and their respective premiums using Investing
+    Isn't the 1yr rate from the Fed 4.14% while the ECB is 2.727%. For the forward rate use 1.0890 for now. Make the changes accordingly and help me recalculate the premiums.
+    (Provided Claude and ChatGPT with the template and the spec)
+    Is there anything missing from the requirements? What could be improved on?
+    Which did you meet? (Checklist)
