@@ -36,3 +36,8 @@ Stage 3
     Create a workbook that meets these requirements...
     Why is the parity check, result, and sensitivity grid symmetry a pass?
     Help me audit the workbook according to the given rubric
+
+Stage 4
+
+    Replace the placeholders with live market data and create a table with the named ranges, value, source retrieval timestamp, and notes/proxy used.
+    ✗ Parity gap of $-29,984 — in a real model this means a formula error (wrong rate basis, inverted ratio, or mis-sized loan), not an arbitrage.
