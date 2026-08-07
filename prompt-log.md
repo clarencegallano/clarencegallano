@@ -29,3 +29,10 @@ Stage 2
     (Provided Claude and ChatGPT with the template and the spec. I completely missed the Tab Architecture then added it with the help of Chat GPT)
     Is there anything missing from the requirements? What could be improved on?
     Which did you meet? (Checklist)
+
+Stage 3
+
+    (Gave the link to my repository, but it couldn't access it even if it was on public so I uploaded a ZIP)
+    Create a workbook that meets these requirements...
+    Why is the parity check, result, and sensitivity grid symmetry a pass?
+    Help me audit the workbook according to the given rubric
