@@ -1,5 +1,6 @@
 | Named Range | Value | Source | Notes / Proxy Used |
 |---|---:|---|---|
+| `FC_AMT` | 8,000,000 EUR | Scenario (fixed by assignment) | Not a market input. |
 | `S0_in` | 1.15616 USD/EUR | FXEmpire, EUR/USD Forward Rates page ("Spot Rate") — https://www.fxempire.com/currencies/eur-usd/forward-rates | Cross-checked against Yahoo Finance `EURUSD=X` (1.1525, ~22:01 UTC 2026-08-07). 34-pip gap is normal cross-feed/timing spread — both feeds report the pair inside its 2026-08-07 day range, not a data error. |
 | `F0_in` | 1.16921 USD/EUR | **CIP-implied**: `S0_in × DF_USD / DF_FC`, computed from the three live inputs below | A live 1-year forward was pulled first (FXEmpire, mid 1.17296, bid 1.17190/ask 1.17401) but rejected — see §3. |
 | `R_USD` | 4.03% | FRED series `DGS1` — Market Yield on U.S. Treasury Securities at 1-Year Constant Maturity — https://fred.stlouisfed.org/series/DGS1 | Chosen over a private bank deposit rate because it is (a) the standard USD risk-free reference at the 1-year tenor, and (b) transparently published daily with a citable, re-pullable series ID. |
@@ -8,7 +9,6 @@
 | `K_CALL` | 1.15616 USD/EUR (`=S0_in`) | Derived, at-the-money | Same as `K_PUT`. |
 | `PREM_PUT` | 0.0180 USD/EUR | Scenario-given (Stage 2 spec) | Kept as-is per the assignment's own guidance: retail-accessible EUR/USD option quotes are unreliable/illiquid at this notional and were not pulled. |
 | `PREM_CALL` | 0.0175 USD/EUR | Scenario-given (Stage 2 spec) | Same rationale as `PREM_PUT`. |
-| `FC_AMT` | 8,000,000 EUR | Scenario (fixed by assignment) | Not a market input. |
 | `T_DAYS` | 365 | Scenario (12-month tenor) | Not a market input. |
 | `BASIS` | 360 | Modeling convention (simplified single day-count) | Applied to both legs; see workbook Notes-Assumptions for the rigorous-variant discussion. |
 | `STEP_FRAC` | 1% | Modeling convention (drives the ±5% sensitivity grid) | Not a market input. |
